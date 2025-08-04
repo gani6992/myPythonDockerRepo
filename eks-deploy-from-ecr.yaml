@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: my-python-app
-        image: 211223789150.dkr.ecr.us-east-1.amazonaws.com/devopscoach/my-python-repo:${BUILD_NUMBER}
+        image: 280721295486.dkr.ecr.us-east-1.amazonaws.com/ganesh/python:${BUILD_NUMBER}
         imagePullPolicy: Always
         ports:
         - containerPort: 5000
@@ -33,4 +33,4 @@ spec:
     - protocol: TCP
       port: 80
       targetPort: 5000
-  type: ClusterIP
+  type: NodePort
